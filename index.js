@@ -8,7 +8,7 @@ const token = process.env.BOT_TOKEN;
 client.login(token);
 
 client.on('ready',(ready)=>{//коли бот запускаєця
-    client.user.setGame('!help');
+    client.user.setGame('!heslp');
 });
 
 client.on('message',async(message)=>{
