@@ -9,7 +9,7 @@ client.login(token);
 
 client.on('ready',(ready)=>{//коли бот запускаєця
     client.user.setGame('!heslp');
-});
+});*/
 
 client.on('message',async(message)=>{
 if (message.author.bot || message.author.id==='465318048476430338') return;
@@ -20,7 +20,7 @@ if (message.author.bot || message.author.id==='465318048476430338') return;
           message.member.addRole(r);
       }
 
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  /*if (!message.content.startsWith(prefix) || message.author.bot) return;
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase(); 
   
@@ -100,7 +100,7 @@ if (command === 'random'){
     if (args[0] > 0 && args[0] <= 99999)
     send = 'You random to ' + args[0] + '\n**' + Math.floor(Math.random()*(parseInt(args[0])+1)) + '**';
     g_cl(message.channel.id, send, 3066993);
-}
+}*/
 });
 
 //////////////////////  FUNCTIONS
@@ -142,4 +142,4 @@ client.on('warn', console.warn);
 client.on('disconnect', () => console.log('Disconnected'));
 
 client.on('reconnecting', () => console.log('I am reconnecting now!'));
-*/
+
