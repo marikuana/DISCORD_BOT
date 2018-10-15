@@ -36,7 +36,7 @@ if (message.author.bot || message.author.id==='465318048476430338') return;
  
   if (command === 'join' || command === 'j'){
     if (args.length == 0) return g_cl(message.channel.id,'`Example :\n!join gta v`',16776960);
-    message.member.addRole(roles(args))
+    message.member.addRole(roles(args.join(/ +/)))
         .then(function(){message.react('✅')})
         .catch(function(){message.react('❌')});
   }
