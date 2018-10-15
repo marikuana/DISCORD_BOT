@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+/*const Discord = require('discord.js');
 const client = new Discord.Client();
 const embed = new Discord.RichEmbed();
 
@@ -142,3 +142,4 @@ client.on('warn', console.warn);
 client.on('disconnect', () => console.log('Disconnected'));
 
 client.on('reconnecting', () => console.log('I am reconnecting now!'));
+*/
