@@ -1,4 +1,4 @@
-/*const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const embed = new Discord.RichEmbed();
 
@@ -6,7 +6,7 @@ const prefix = "!";
 const token = process.env.BOT_TOKEN; 
 
 client.login(token);
-
+/*
 client.on('ready',(ready)=>{//коли бот запускаєця
     client.user.setGame('!heslp');
 });*/
