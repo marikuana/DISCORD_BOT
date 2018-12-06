@@ -14,7 +14,7 @@ client.on('ready',(ready)=>{//коли бот запускаєця
 client.on('message',async(message)=>{
 if (message.author.bot || message.author.id==='465318048476430338') return;
   
-  if (message.content.match('discord.gg') || message.content.match('discord-server.com') || message.content.match('discordapp.com/invite') || message.content.match('goo.gl/')) {
+  if (message.content.match('discord.gg') || message.content.match('discord-server.com') || message.content.match('discordapp.com/invite') || message.content.match('goo.gl/') || message.content.match('invite.gg')) {
           message.delete();
           let r = message.guild.roles.find('name','Muted');
           message.member.addRole(r);
